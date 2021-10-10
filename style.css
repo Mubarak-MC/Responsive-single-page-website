@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+.background{
+    background:#FFFDF9;
+    background-size: cover;
+
+}
+
+.burger{
+    display: none;
+    width: 10%;
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    }
+
+ .lorem{
+    font-family: 'Abril Fatface', cursive;  
+margin: 0px 30px;
+padding: 20px;
+} 
+ 
+.cart{
+    display: none;
+    width: 10%;
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+ }
+
+/* .nav{
+    display: flex;
+    flex-direction: row;
+} */
+
+.navbar{
+    width: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.nav-list{
+
+width: 70%;
+display: fle;
+align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+ #about{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    padding: 3px 8px;
+    border: 3px solid white;
+    font-size: 15px;
+    border-radius: 25px;
+    background: red;
+    color: white;
+    margin: 3px;
+}
+
+.para{
+display: flex;
+flex-direction: row;
+margin-top: -75px;
+}
+
+.textB{
+    color: black;
+    font-size: 60px;
+    width: 40%;
+    margin: 25px 100px;
+    padding: 11px 50px;
+    font-family: 'Abril Fatface', cursive;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 11%;
+}
+
+.textB p{
+    width: 500px;
+    margin: 80px 10px;
+
+}
+.textS{
+
+    color: grey;
+    font-size: 20px;
+    width: 25%;
+    margin: 100px 100px;
+    padding: 30px;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+
+
+
+
+.container{
+    width: 200px;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    margin-right: -100px;
+    width: 300px;
+}
+    
+.card{
+    width: 160px;
+    border-radius: 10%;
+    height: 200px;
+    margin: 10px 20px 170px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    background: #fff;
+padding: 15px 20px;
+display: flex;
+    flex-direction: column;
+}
+.card img{
+    border-radius: 50%;
+}
+
+.card h3{
+    font-size: 1.3rem;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+ @media only screen and (max-width:1300px){
+
+
+   .top-sec{
+       display: flex;
+       flex-direction: row;
+
+   }
+   .burger{
+ display: block;
+ font-size: 50px;
+    color: red;
+   }
+
+.tit{
+    max-width: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
+.lorem{
+    font-size: 40px;
+}
+.cart{
+display: block;
+font-size: 50px;
+    color: red;
+}
+
+.nav-list{
+    display: none;
+}
+
+.col{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+} 
+ .card{
+    margin: 60px;
+    padding: 25px;
+    width: 270px;
+    height: 330px;
+} 
+
+
+
+.cards{
+    display: none;
+}
+.textS{
+    width: 50%;
+    margin: 80px 100px;
+    padding: 0px;
+    position: relative;
+    top: 0%;
+    right: 0%;
+}
+
+.textB{
+     margin: 20px 80px;
+    position: none; 
+  max-width: 50%;
+ margin: auto;
+margin:10px 250px;
+margin-left: 100px;
+}
+    
+.textB p{
+    width: 550px;
+    font-size: 65px;
+
+
+    
+} 
+ 
+.textS p{
+
+ margin: 5px -130px;   
+font-size: 40px;
+} 
+
+
+@media only screen and (max-width:1100px){
+
+    .top-sec{
+        display: flex;
+        flex-direction: row;
+ 
+    }
+    .burger{
+  display: block;
+  font-size: 50px;
+     color: red;
+    }
+ 
+ .tit{
+     max-width: 50%;
+     margin: auto;
+     margin-top: 15px;
+ 
+ }
+ .lorem{
+    font-size: 40px;
+    width: 330px;
+ }
+ .cart{
+ display: block;
+ font-size: 50px;
+     color: red;
+ }
+ 
+ .nav-list{
+     display: none;
+ }
+ 
+ .col{
+     display: flex;
+     flex-direction: column-reverse;
+     width: 300px;
+     margin: auto;
+ }
+ .row{
+     width: 100%;
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     align-items: center;
+     justify-content: center;
+     margin-top: 300px;
+ }
+ .card{
+     margin: 20px;
+     padding: 25px;
+     width: 250px;
+     height: 300px;
+ }
+ 
+ .cards{
+     display: none;
+ }
+ .textS{
+     width: 50%;
+     margin: 80px 100px;
+     padding: 0px;
+     position: relative;
+     top: 0%;
+     right: 0%;
+ }
+ 
+ .row{
+     margin-top: 350px;
+ } 
+ 
+ .textB{ 
+      margin: 20px 80px;
+     position: none; 
+   max-width: 50%;
+  margin: auto;
+     height: 80px;
+  } 
+ .textB{
+     width: 400px;
+     
+ }
+  
+ .textS p{
+  margin: 5px -130px;    
+ }
+
+}
+
+}
+
+@media only screen and (max-width:600px){
+    .row{
+        margin-left: 70px;
+    }
+
+.cart{
+    margin-right: -114px;
+}
+
+.row{
+    margin-top: 300px;
+    margin-left: 70px;
+}
+
+.textS{
+    margin: 80px 150px;
+}
+.textB{
+    margin-left: -50px;
+}
+}
+
+@media only screen and (max-width:400px){
+    .row{
+        margin-left: 120px;
+    }
+
+.cart{
+    margin-right: -190px;
+}
+.textB{
+    margin-left: -50px;
+}
+
+}
+
+
+
+
+
+
+
+
